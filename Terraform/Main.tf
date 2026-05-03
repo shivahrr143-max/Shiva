@@ -68,7 +68,7 @@ resource "aws_route_table_association" "public_subnet_assoc" {
 }
 	resource "aws_key_pair" "demo_key" {
   key_name   = "mini-project-key"
-  public_key = file("~/.ssh/id_rsa.pub")
+  public_key = file("C:/Users/User/.ssh/id_rsa.pub")
 }
 	resource "aws_instance" "web" {
   ami                    = "ami-0c02fb55956c7d316" # Ubuntu 20.04
