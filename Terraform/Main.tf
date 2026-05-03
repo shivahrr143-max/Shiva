@@ -83,11 +83,4 @@ resource "aws_route_table_association" "public_subnet_assoc" {
   description = "Public IP of EC2 instance"
   value       = aws_instance.web.public_ip
 }
-	ingress {
-    from_port   = 8080
-    to_port     = 8080
-    protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]  # Jenkins console
-  }
-00:41:53	Philip:	ssh-keygen -t rsa -b 4096 -f ~/.ssh/id_rsa
- 	ami-07f08c398f8a384e7
+
